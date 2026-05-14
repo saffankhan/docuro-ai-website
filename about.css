@@ -1,0 +1,327 @@
+body.about-page {
+  background:
+    radial-gradient(circle at top left, rgba(79, 70, 229, 0.08), transparent 28%),
+    radial-gradient(circle at 84% 18%, rgba(37, 99, 235, 0.08), transparent 22%),
+    linear-gradient(180deg, #ffffff 0%, #f6f8ff 52%, #fdfdff 100%);
+}
+
+.about-page .nav-links a:hover,
+.about-page .nav-links a:focus-visible {
+  color: var(--text);
+}
+
+.about-hero {
+  padding-top: 58px;
+}
+
+.about-hero-grid,
+.workflow-grid,
+.tech-grid,
+.trust-grid,
+.future-grid,
+.two-column-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.about-hero-copy h1 {
+  max-width: 11ch;
+}
+
+.about-hero-visual,
+.workflow-visual,
+.tech-visual,
+.trust-visual {
+  padding: 18px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.about-hero-visual img,
+.workflow-visual img,
+.tech-visual img,
+.trust-visual img {
+  border-radius: 22px;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.about-pill {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  color: var(--text);
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.story-grid,
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.story-card,
+.problem-card,
+.workflow-step,
+.info-card,
+.metric-card {
+  padding: 28px;
+  border-radius: 26px;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.story-card:hover,
+.problem-card:hover,
+.workflow-step:hover,
+.info-card:hover,
+.metric-card:hover,
+.about-page .audience-card:hover,
+.about-page .testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.story-lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.accent-card {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.06), rgba(255, 255, 255, 0.9));
+}
+
+.section-dark-band {
+  background: linear-gradient(180deg, rgba(239, 244, 255, 0.4), rgba(255, 255, 255, 0));
+}
+
+.problem-grid,
+.audience-about-grid,
+.metrics-band {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.problem-card h3,
+.workflow-step h3,
+.info-card h3,
+.metric-card strong {
+  margin-top: 0;
+}
+
+.problem-card h3,
+.info-card h3,
+.audience-about-grid .audience-card h3 {
+  font-size: 1.32rem;
+  margin-bottom: 10px;
+}
+
+.stacked-cards,
+.workflow-steps,
+.tech-cards,
+.trust-copy,
+.future-cards {
+  display: grid;
+  gap: 18px;
+}
+
+.workflow-step {
+  min-height: 180px;
+}
+
+.workflow-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: #fff;
+  font-weight: 800;
+}
+
+.narrow-heading {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.about-page .audience-card,
+.about-page .testimonial-card {
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.metric-card {
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.metric-card strong {
+  display: block;
+  font-size: clamp(2.6rem, 5vw, 4.1rem);
+  line-height: 1;
+  margin-bottom: 12px;
+  color: var(--text);
+}
+
+.metric-card span {
+  color: var(--muted);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 28px;
+  text-align: left;
+}
+
+.contact-grid div {
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(37, 99, 235, 0.06);
+  color: var(--muted);
+}
+
+.contact-grid strong {
+  color: var(--text);
+}
+
+@media (max-width: 1080px) {
+  .about-hero-grid,
+  .workflow-grid,
+  .tech-grid,
+  .future-grid,
+  .two-column-section {
+    grid-template-columns: 1fr;
+  }
+
+  .story-grid,
+  .trust-grid,
+  .problem-grid,
+  .audience-about-grid,
+  .metrics-band,
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .about-hero {
+    padding-top: 36px;
+  }
+
+  .story-grid,
+  .trust-grid,
+  .problem-grid,
+  .audience-about-grid,
+  .metrics-band,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story-card,
+  .problem-card,
+  .workflow-step,
+  .info-card,
+  .metric-card {
+    padding: 20px;
+  }
+
+  .about-hero-visual,
+  .workflow-visual,
+  .tech-visual,
+  .trust-visual {
+    padding: 12px;
+  }
+
+  .metric-card {
+    min-height: 160px;
+  }
+
+  .metric-card strong {
+    font-size: clamp(2rem, 8vw, 3rem);
+  }
+
+  .about-pill {
+    font-size: 0.82rem;
+    padding: 8px 12px;
+  }
+
+  .story-lead {
+    font-size: 1.08rem;
+  }
+
+  .contact-grid div {
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding-top: 24px;
+  }
+
+  .story-card,
+  .problem-card,
+  .workflow-step,
+  .info-card,
+  .metric-card {
+    padding: 16px;
+  }
+
+  .metric-card {
+    min-height: 140px;
+  }
+
+  .metric-card strong {
+    font-size: clamp(1.8rem, 7vw, 2.6rem);
+  }
+
+  .about-pill {
+    font-size: 0.78rem;
+    padding: 7px 10px;
+  }
+
+  .workflow-step {
+    min-height: auto;
+  }
+
+  .workflow-step span {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+  }
+
+  .contact-grid {
+    gap: 10px;
+  }
+
+  .contact-grid div {
+    padding: 12px;
+    border-radius: 14px;
+  }
+}

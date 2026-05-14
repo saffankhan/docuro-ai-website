@@ -1,0 +1,458 @@
+.pricing-page {
+  background:
+    radial-gradient(circle at top left, rgba(79, 70, 229, 0.08), transparent 28%),
+    radial-gradient(circle at 84% 18%, rgba(37, 99, 235, 0.08), transparent 22%),
+    linear-gradient(180deg, #ffffff 0%, #f6f8ff 52%, #fdfdff 100%);
+}
+
+.pricing-page .nav-links a:hover,
+.pricing-page .nav-links a:focus-visible {
+  color: var(--text);
+}
+
+.pricing-hero {
+  padding-top: 58px;
+}
+
+.pricing-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.pricing-hero-copy h1,
+.pricing-cta-shell h2 {
+  margin: 18px 0 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.6rem, 6vw, 4.7rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.pricing-hero-visual {
+  position: relative;
+  min-height: 620px;
+}
+
+.pricing-dashboard,
+.pricing-float-card,
+.pricing-content-card,
+.pricing-toggle-shell,
+.pricing-plan-card,
+.comparison-table-shell,
+.comparison-mobile-card,
+.benefit-card,
+.billing-card,
+.security-card,
+.faq-item,
+.pricing-cta-shell {
+  border-radius: 28px;
+}
+
+.pricing-dashboard {
+  padding: 16px;
+  overflow: hidden;
+}
+
+.pricing-dashboard img {
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+}
+
+.pricing-float-card {
+  position: absolute;
+  padding: 18px 20px;
+  z-index: 2;
+  animation: float 6s ease-in-out infinite;
+}
+
+.pricing-float-card span,
+.pricing-float-card small,
+.pricing-strip span,
+.pricing-plan-card p,
+.benefit-card p,
+.billing-card p,
+.security-card p,
+.faq-item p {
+  color: var(--muted);
+}
+
+.pricing-float-card strong {
+  display: block;
+  margin: 6px 0;
+  font-size: 1.4rem;
+}
+
+.pricing-float-top {
+  top: 18px;
+  right: 18px;
+}
+
+.pricing-float-side {
+  bottom: 32px;
+  left: -12px;
+  animation-delay: -2s;
+}
+
+.pricing-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding: 18px;
+}
+
+.pricing-strip strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.pricing-content-card {
+  padding: 26px;
+}
+
+.pricing-placeholder {
+  margin: 0;
+  padding: 26px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(239, 244, 255, 0.82), rgba(255, 255, 255, 0.94));
+  border: 1px dashed rgba(37, 99, 235, 0.24);
+  color: var(--text);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.pricing-toggle-shell {
+  display: inline-flex;
+  padding: 8px;
+  gap: 8px;
+}
+
+.pricing-toggle-option {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 18px;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.pricing-toggle-option span {
+  color: var(--primary);
+  font-size: 0.82rem;
+}
+
+.pricing-toggle-option.is-active {
+  background: #fff;
+  color: var(--text);
+  box-shadow: 0 12px 22px rgba(15, 23, 42, 0.08);
+}
+
+.pricing-page-grid,
+.benefit-grid,
+.billing-grid,
+.security-grid {
+  display: grid;
+  gap: 22px;
+}
+
+.pricing-page-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.benefit-grid,
+.billing-grid,
+.security-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.pricing-plan-card,
+.benefit-card,
+.billing-card,
+.security-card,
+.comparison-mobile-card {
+  padding: 28px;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.pricing-plan-card:hover,
+.benefit-card:hover,
+.billing-card:hover,
+.security-card:hover,
+.comparison-mobile-card:hover,
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.pricing-plan-card {
+  position: relative;
+}
+
+.pricing-plan-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.pricing-plan-price {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.pricing-plan-price strong {
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  line-height: 1;
+}
+
+.pricing-plan-price span {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.pricing-page-badge {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(79, 70, 229, 0.18));
+  color: var(--primary);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.pricing-plan-featured {
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(79, 70, 229, 0.14);
+}
+
+.pricing-plan-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-plan-list li {
+  position: relative;
+  padding-left: 22px;
+  margin: 14px 0;
+  color: var(--muted);
+}
+
+.pricing-plan-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.pricing-plan-card .button {
+  width: 100%;
+  margin-top: 22px;
+}
+
+.comparison-table-shell {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.comparison-table {
+  min-width: 880px;
+}
+
+.comparison-row {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 16px;
+  padding: 18px 12px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.comparison-head {
+  font-weight: 800;
+  color: var(--text);
+}
+
+.comparison-row div:first-child {
+  font-weight: 700;
+}
+
+.comparison-mobile-cards {
+  display: none;
+  margin-top: 20px;
+  gap: 18px;
+}
+
+.faq-list {
+  display: grid;
+  gap: 16px;
+}
+
+.faq-item {
+  padding: 22px 24px;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 700;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin: 14px 0 0;
+}
+
+.pricing-cta-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: 34px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(79, 70, 229, 0.12));
+}
+
+.pricing-cta-shell h2 {
+  font-size: clamp(2rem, 4.4vw, 3.3rem);
+}
+
+@media (max-width: 1080px) {
+  .pricing-hero-grid,
+  .pricing-page-grid,
+  .benefit-grid,
+  .billing-grid,
+  .security-grid,
+  .pricing-cta-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-mobile-cards {
+    display: grid;
+  }
+
+  .comparison-table-shell {
+    display: none;
+  }
+
+  .pricing-hero-visual {
+    min-height: 480px;
+  }
+
+  .pricing-page-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .benefit-grid,
+  .billing-grid,
+  .security-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .pricing-hero {
+    padding-top: 36px;
+  }
+
+  .pricing-strip,
+  .comparison-mobile-cards,
+  .pricing-page-grid,
+  .benefit-grid,
+  .billing-grid,
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-content-card,
+  .pricing-plan-card,
+  .benefit-card,
+  .billing-card,
+  .security-card,
+  .comparison-mobile-card,
+  .pricing-cta-shell {
+    padding: 20px;
+  }
+
+  .pricing-hero-visual {
+    min-height: 380px;
+  }
+
+  .pricing-float-top {
+    right: 0;
+    top: 8px;
+  }
+
+  .pricing-float-side {
+    left: 0;
+    bottom: 0;
+  }
+
+  .pricing-plan-featured {
+    transform: none;
+  }
+
+  .pricing-hero-copy h1 {
+    font-size: clamp(1.8rem, 7vw, 3rem);
+  }
+
+  .pricing-cta-shell h2 {
+    font-size: clamp(1.6rem, 6vw, 2.6rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-hero {
+    padding-top: 24px;
+  }
+
+  .pricing-hero-visual {
+    min-height: 300px;
+  }
+
+  .pricing-content-card,
+  .pricing-plan-card,
+  .benefit-card,
+  .billing-card,
+  .security-card,
+  .comparison-mobile-card,
+  .pricing-cta-shell {
+    padding: 16px;
+  }
+
+  .pricing-float-card {
+    padding: 14px 16px;
+  }
+
+  .pricing-float-card strong {
+    font-size: 1.2rem;
+  }
+
+  .pricing-plan-price strong {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+  }
+
+  .pricing-strip strong {
+    font-size: 0.95rem;
+  }
+
+  .pricing-strip span {
+    font-size: 0.82rem;
+  }
+}
+

@@ -1,0 +1,395 @@
+.contact-page {
+  background:
+    radial-gradient(circle at top left, rgba(79, 70, 229, 0.08), transparent 28%),
+    radial-gradient(circle at 84% 18%, rgba(37, 99, 235, 0.08), transparent 22%),
+    linear-gradient(180deg, #ffffff 0%, #f6f8ff 52%, #fdfdff 100%);
+}
+
+.contact-page .nav-links a:hover,
+.contact-page .nav-links a:focus-visible {
+  color: var(--text);
+}
+
+.contact-hero {
+  padding-top: 58px;
+}
+
+.contact-hero-grid,
+.form-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 28px;
+  align-items: center;
+}
+
+.contact-hero-copy h1,
+.compact-heading h2,
+.contact-cta-shell h2 {
+  margin: 18px 0 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(2.6rem, 6vw, 4.7rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
+}
+
+.contact-hero-visual {
+  position: relative;
+  min-height: 620px;
+}
+
+.contact-dashboard,
+.contact-floating-card,
+.contact-info-card,
+.sales-card,
+.support-card,
+.trust-mini-card,
+.contact-form-card,
+.trust-card-contact,
+.contact-cta-shell {
+  border-radius: 28px;
+}
+
+.contact-dashboard {
+  padding: 16px;
+  overflow: hidden;
+}
+
+.contact-dashboard img {
+  border-radius: 24px;
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-floating-card {
+  position: absolute;
+  padding: 18px 20px;
+  z-index: 2;
+  animation: float 6s ease-in-out infinite;
+}
+
+.contact-floating-card span,
+.contact-floating-card small {
+  display: block;
+  color: var(--muted);
+}
+
+.contact-floating-card strong {
+  display: block;
+  margin: 6px 0;
+  font-size: 1.4rem;
+}
+
+.contact-float-top {
+  top: 18px;
+  right: 18px;
+}
+
+.contact-float-side {
+  bottom: 32px;
+  left: -12px;
+  animation-delay: -2s;
+}
+
+.contact-metric-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  padding: 18px;
+}
+
+.contact-metric-strip strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.contact-metric-strip span,
+.contact-info-card p,
+.sales-card p,
+.support-card p,
+.trust-mini-card span,
+.trust-card-contact p,
+.form-status {
+  color: var(--muted);
+}
+
+.contact-info-grid,
+.sales-grid,
+.support-grid,
+.trust-grid-contact {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-info-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.sales-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.support-grid,
+.trust-grid-contact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact-info-card,
+.sales-card,
+.support-card,
+.trust-mini-card,
+.trust-card-contact {
+  padding: 24px;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.contact-info-card:hover,
+.sales-card:hover,
+.support-card:hover,
+.trust-mini-card:hover,
+.trust-card-contact:hover,
+.contact-form-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.12), rgba(79, 70, 229, 0.18));
+  color: var(--primary);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.contact-info-card h3,
+.sales-card h3,
+.support-card h3,
+.trust-card-contact h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.22rem;
+}
+
+.contact-info-card a,
+.contact-info-card span {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.compact-heading h2 {
+  font-size: clamp(1.9rem, 4.5vw, 3.1rem);
+}
+
+.trust-mini-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form-card {
+  padding: 28px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.field {
+  display: grid;
+  gap: 8px;
+}
+
+.field span {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.86);
+  padding: 15px 16px;
+  color: var(--text);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  transition:
+    border-color var(--transition),
+    box-shadow var(--transition),
+    transform var(--transition);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08);
+  transform: translateY(-1px);
+}
+
+.field-full {
+  grid-column: 1 / -1;
+}
+
+.field-error {
+  min-height: 18px;
+  color: #dc2626;
+  font-size: 0.85rem;
+}
+
+.field.has-error input,
+.field.has-error select,
+.field.has-error textarea {
+  border-color: rgba(220, 38, 38, 0.42);
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.button.is-loading {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.button.is-success {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.contact-cta-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  padding: 34px;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.08), rgba(79, 70, 229, 0.12));
+}
+
+.contact-cta-shell h2 {
+  font-size: clamp(2rem, 4.4vw, 3.3rem);
+}
+
+@media (max-width: 1080px) {
+  .contact-hero-grid,
+  .form-layout,
+  .contact-cta-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-grid,
+  .sales-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .support-grid,
+  .trust-grid-contact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-hero-visual {
+    min-height: 480px;
+  }
+}
+
+@media (max-width: 760px) {
+  .contact-hero {
+    padding-top: 36px;
+  }
+
+  .contact-info-grid,
+  .sales-grid,
+  .support-grid,
+  .trust-grid-contact,
+  .form-grid,
+  .contact-metric-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-card,
+  .contact-cta-shell {
+    padding: 20px;
+  }
+
+  .contact-hero-visual {
+    min-height: 380px;
+  }
+
+  .contact-float-top {
+    right: 0;
+    top: 8px;
+  }
+
+  .contact-float-side {
+    left: 0;
+    bottom: 0;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-cta-shell h2 {
+    font-size: clamp(1.6rem, 6vw, 2.6rem);
+  }
+
+  .contact-hero-copy h1 {
+    font-size: clamp(1.8rem, 7vw, 3rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-hero {
+    padding-top: 24px;
+  }
+
+  .contact-hero-visual {
+    min-height: 320px;
+  }
+
+  .contact-info-card,
+  .sales-card,
+  .support-card,
+  .trust-mini-card,
+  .trust-card-contact {
+    padding: 18px;
+  }
+
+  .contact-form-card {
+    padding: 16px;
+  }
+
+  .contact-cta-shell {
+    padding: 18px;
+  }
+
+  .contact-floating-card {
+    padding: 14px 16px;
+  }
+
+  .contact-floating-card strong {
+    font-size: 1.2rem;
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    padding: 12px 14px;
+    border-radius: 14px;
+  }
+}
+

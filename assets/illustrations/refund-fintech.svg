@@ -1,0 +1,68 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="860" rx="40" fill="url(#bg)"/>
+  <g opacity="0.46" filter="url(#blur)">
+    <circle cx="210" cy="180" r="150" fill="#2563EB"/>
+    <circle cx="980" cy="150" r="150" fill="#4F46E5"/>
+    <circle cx="952" cy="680" r="180" fill="#38BDF8"/>
+  </g>
+  <rect x="76" y="76" width="1048" height="708" rx="34" fill="rgba(255,255,255,0.82)" stroke="rgba(255,255,255,0.6)"/>
+  <rect x="120" y="124" width="296" height="176" rx="28" fill="#FFFFFF"/>
+  <circle cx="184" cy="184" r="34" fill="url(#pay)"/>
+  <path d="M170 184H198" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round"/>
+  <path d="M184 170V198" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round"/>
+  <text x="236" y="184" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Secure Payments</text>
+  <text x="236" y="218" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Razorpay / UPI style</text>
+  <text x="236" y="246" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Protected transaction flow</text>
+  <rect x="452" y="124" width="296" height="176" rx="28" fill="#FFFFFF"/>
+  <circle cx="516" cy="184" r="34" fill="url(#bill)"/>
+  <rect x="500" y="168" width="32" height="34" rx="8" fill="#F8FAFC"/>
+  <path d="M508 178H524M508 190H520" stroke="#2563EB" stroke-width="5" stroke-linecap="round"/>
+  <text x="568" y="184" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Billing Logic</text>
+  <text x="568" y="218" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Subscription cycles</text>
+  <text x="568" y="246" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Refund decision paths</text>
+  <rect x="784" y="124" width="296" height="176" rx="28" fill="#FFFFFF"/>
+  <circle cx="848" cy="184" r="34" fill="url(#fraud)"/>
+  <path d="M848 160L874 172V198C874 218 864 234 848 244C832 234 822 218 822 198V172L848 160Z" fill="#F8FAFC"/>
+  <path d="M838 198L846 206L860 188" stroke="#2563EB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="900" y="184" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Fraud Protection</text>
+  <text x="900" y="218" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Chargeback monitoring</text>
+  <text x="900" y="246" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Abuse prevention layer</text>
+  <rect x="120" y="338" width="960" height="396" rx="32" fill="#FFFFFF"/>
+  <text x="164" y="404" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Refund Policy Layout Support</text>
+  <rect x="164" y="444" width="874" height="246" rx="24" fill="#F8FAFC"/>
+  <rect x="198" y="482" width="196" height="18" rx="9" fill="#DCE8FF"/>
+  <rect x="198" y="520" width="772" height="14" rx="7" fill="#CBD5E1"/>
+  <rect x="198" y="548" width="706" height="14" rx="7" fill="#CBD5E1"/>
+  <rect x="198" y="576" width="732" height="14" rx="7" fill="#CBD5E1"/>
+  <path d="M214 640H988" stroke="url(#flow)" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 18"/>
+  <circle cx="254" cy="640" r="22" fill="#2563EB"/>
+  <circle cx="500" cy="640" r="22" fill="#4F46E5"/>
+  <circle cx="746" cy="640" r="22" fill="#38BDF8"/>
+  <circle cx="952" cy="640" r="22" fill="#22C55E"/>
+  <defs>
+    <linearGradient id="bg" x1="76" y1="40" x2="1120" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF4FF"/>
+    </linearGradient>
+    <linearGradient id="pay" x1="150" y1="150" x2="218" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="bill" x1="482" y1="150" x2="550" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="fraud" x1="814" y1="150" x2="882" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="214" y1="640" x2="988" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <filter id="blur" x="-60" y="-120" width="1540" height="1220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="90"/>
+    </filter>
+  </defs>
+</svg>

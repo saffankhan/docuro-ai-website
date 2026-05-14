@@ -1,0 +1,11 @@
+# Cloudflare Pages — normalize trailing slashes
+# Without this, /about returns 404. With it, /about → /about/ → serves /about/index.html
+
+/about                  /about/                  301
+/contact                /contact/                301
+/pricing                /pricing/                301
+/faq                    /faq/                    301
+/privacy-policy         /privacy-policy/         301
+/terms-and-conditions   /terms-and-conditions/   301
+/refund-policy          /refund-policy/          301
+/cancellation-policy    /cancellation-policy/    301

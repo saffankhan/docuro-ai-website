@@ -1,0 +1,66 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="820" rx="40" fill="url(#bg)"/>
+  <g opacity="0.48" filter="url(#blur)">
+    <circle cx="190" cy="660" r="160" fill="#2563EB"/>
+    <circle cx="980" cy="150" r="180" fill="#4F46E5"/>
+  </g>
+  <rect x="72" y="66" width="1056" height="688" rx="36" fill="rgba(15,23,42,0.72)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="118" y="130" fill="white" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">AI Technology Stack</text>
+  <text x="118" y="170" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="20">OCR, ML feedback loops, GST mapping logic, and operational analytics.</text>
+
+  <rect x="118" y="220" width="300" height="228" rx="28" fill="#111C34"/>
+  <text x="148" y="272" fill="white" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">OCR Processing</text>
+  <rect x="148" y="304" width="240" height="114" rx="22" fill="#F8FAFC"/>
+  <rect x="170" y="326" width="98" height="12" rx="6" fill="#94A3B8"/>
+  <rect x="170" y="354" width="160" height="12" rx="6" fill="#CBD5E1"/>
+  <rect x="170" y="382" width="126" height="12" rx="6" fill="#CBD5E1"/>
+  <rect x="310" y="326" width="52" height="20" rx="10" fill="#38BDF8"/>
+  <text x="150" y="432" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">Structured extraction from Indian invoice formats</text>
+
+  <rect x="450" y="220" width="300" height="228" rx="28" fill="#111C34"/>
+  <text x="480" y="272" fill="white" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">GST Rule Engine</text>
+  <rect x="482" y="310" width="108" height="34" rx="17" fill="#1D4ED8"/>
+  <rect x="600" y="310" width="108" height="34" rx="17" fill="#4F46E5"/>
+  <rect x="540" y="356" width="108" height="34" rx="17" fill="#0EA5E9"/>
+  <text x="514" y="332" fill="white" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">CGST</text>
+  <text x="634" y="332" fill="white" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">SGST</text>
+  <text x="574" y="378" fill="white" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">IGST</text>
+  <text x="482" y="432" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">Confidence-aware mapping for tax categories and ledger outputs</text>
+
+  <rect x="782" y="220" width="300" height="228" rx="28" fill="#111C34"/>
+  <text x="812" y="272" fill="white" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Learning Loop</text>
+  <circle cx="932" cy="352" r="72" stroke="url(#ring)" stroke-width="18" stroke-linecap="round" stroke-dasharray="260 110"/>
+  <path d="M932 290L952 318L928 322" stroke="#E2E8F0" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="862" y="432" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">Human review feedback improves future extraction quality</text>
+
+  <rect x="118" y="484" width="964" height="220" rx="30" fill="#111C34"/>
+  <text x="152" y="538" fill="white" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Analytics + Operations</text>
+  <rect x="152" y="570" width="304" height="98" rx="22" fill="#0F172A"/>
+  <path d="M176 634C206 610 232 650 264 624C294 600 318 588 342 608C368 628 396 642 432 590" stroke="url(#chart)" stroke-width="8" stroke-linecap="round"/>
+  <rect x="488" y="570" width="268" height="98" rx="22" fill="#0F172A"/>
+  <rect x="514" y="592" width="214" height="16" rx="8" fill="#1E293B"/>
+  <rect x="514" y="620" width="174" height="16" rx="8" fill="#22C55E" fill-opacity="0.75"/>
+  <text x="516" y="560" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">Throughput by client</text>
+  <rect x="788" y="570" width="260" height="98" rx="22" fill="#0F172A"/>
+  <rect x="814" y="594" width="98" height="18" rx="9" fill="#4F46E5"/>
+  <rect x="814" y="626" width="160" height="18" rx="9" fill="#38BDF8"/>
+  <text x="814" y="560" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">Queue health and exports</text>
+
+  <defs>
+    <linearGradient id="bg" x1="78" y1="40" x2="1110" y2="786" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#111B34"/>
+    </linearGradient>
+    <linearGradient id="chart" x1="176" y1="592" x2="432" y2="592" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="860" y1="280" x2="1004" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <filter id="blur" x="-80" y="-120" width="1540" height="1140" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="90"/>
+    </filter>
+  </defs>
+</svg>

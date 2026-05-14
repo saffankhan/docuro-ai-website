@@ -1,0 +1,64 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="860" rx="40" fill="url(#bg)"/>
+  <g opacity="0.5" filter="url(#blur)">
+    <circle cx="220" cy="160" r="150" fill="#2563EB"/>
+    <circle cx="1030" cy="180" r="160" fill="#4F46E5"/>
+    <circle cx="930" cy="670" r="180" fill="#38BDF8"/>
+  </g>
+  <rect x="76" y="76" width="1048" height="708" rx="34" fill="rgba(255,255,255,0.82)" stroke="rgba(255,255,255,0.6)"/>
+  <rect x="120" y="124" width="276" height="180" rx="28" fill="#FFFFFF"/>
+  <circle cx="182" cy="186" r="34" fill="url(#ai)"/>
+  <path d="M170 170H194V202H170V170Z" stroke="#F8FAFC" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M182 152V166M164 186H150M214 186H200M168 160L158 150M196 160L206 150M168 212L158 222M196 212L206 222M182 206V220" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round"/>
+  <text x="236" y="184" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">AI Automation</text>
+  <text x="236" y="220" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Document workflows</text>
+  <text x="236" y="248" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Guided review logic</text>
+
+  <rect x="428" y="124" width="276" height="180" rx="28" fill="#FFFFFF"/>
+  <circle cx="490" cy="186" r="34" fill="url(#shield)"/>
+  <path d="M490 162L520 176V206C520 228 508 246 490 256C472 246 460 228 460 206V176L490 162Z" fill="#F8FAFC"/>
+  <path d="M476 206L486 216L506 192" stroke="#2563EB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="544" y="184" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Compliance</text>
+  <text x="544" y="220" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">GST-ready flows</text>
+  <text x="544" y="248" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Reliable audit trail</text>
+
+  <rect x="736" y="124" width="344" height="180" rx="28" fill="#FFFFFF"/>
+  <circle cx="798" cy="186" r="34" fill="url(#pay)"/>
+  <rect x="780" y="174" width="36" height="26" rx="8" fill="#F8FAFC"/>
+  <path d="M788 174V166C788 156 796 148 806 148C816 148 824 156 824 166V174" stroke="#F8FAFC" stroke-width="6" stroke-linecap="round"/>
+  <text x="854" y="184" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Secure Payments</text>
+  <text x="854" y="220" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Trusted gateway integrations</text>
+  <text x="854" y="248" fill="#52607A" font-family="Inter, Arial, sans-serif" font-size="18">Protected billing workflows</text>
+
+  <rect x="120" y="344" width="960" height="392" rx="32" fill="#FFFFFF"/>
+  <text x="164" y="408" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Terms-ready Legal Structure</text>
+  <rect x="164" y="448" width="872" height="230" rx="24" fill="#F8FAFC"/>
+  <rect x="200" y="488" width="220" height="18" rx="9" fill="#DCE8FF"/>
+  <rect x="200" y="526" width="760" height="14" rx="7" fill="#CBD5E1"/>
+  <rect x="200" y="554" width="712" height="14" rx="7" fill="#CBD5E1"/>
+  <rect x="200" y="582" width="680" height="14" rx="7" fill="#CBD5E1"/>
+  <rect x="200" y="620" width="120" height="16" rx="8" fill="#2563EB"/>
+  <rect x="334" y="620" width="120" height="16" rx="8" fill="#4F46E5"/>
+  <rect x="468" y="620" width="120" height="16" rx="8" fill="#38BDF8"/>
+  <defs>
+    <linearGradient id="bg" x1="76" y1="40" x2="1120" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF4FF"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="148" y1="152" x2="216" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="456" y1="152" x2="524" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="pay" x1="764" y1="152" x2="832" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+    <filter id="blur" x="-60" y="-120" width="1540" height="1220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="90"/>
+    </filter>
+  </defs>
+</svg>

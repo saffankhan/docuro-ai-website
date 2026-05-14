@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found | Docuro AI</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .notfound-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .notfound-main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 20px 60px;
+        position: relative;
+      }
+
+      .notfound-card {
+        max-width: 640px;
+        width: 100%;
+        padding: 56px 44px;
+        text-align: center;
+        border-radius: 32px;
+        background: var(--surface);
+        border: 1px solid rgba(255, 255, 255, 0.65);
+        box-shadow: var(--shadow-lg);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        position: relative;
+        z-index: 1;
+      }
+
+      .notfound-code {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins", sans-serif;
+        font-size: clamp(5rem, 14vw, 9rem);
+        font-weight: 800;
+        line-height: 1;
+        margin: 0 0 12px;
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.04em;
+      }
+
+      .notfound-card h1 {
+        margin: 0 0 14px;
+        font-family: "Poppins", sans-serif;
+        font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+        line-height: 1.15;
+        color: var(--text);
+        letter-spacing: -0.02em;
+      }
+
+      .notfound-card p {
+        margin: 0 auto 28px;
+        max-width: 48ch;
+        color: var(--muted);
+        font-size: 1.02rem;
+        line-height: 1.65;
+      }
+
+      .notfound-actions {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 28px;
+      }
+
+      .notfound-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 24px;
+        justify-content: center;
+        padding-top: 22px;
+        border-top: 1px solid rgba(148, 163, 184, 0.16);
+      }
+
+      .notfound-links a {
+        color: var(--muted);
+        font-size: 0.92rem;
+        font-weight: 500;
+        transition: color var(--transition);
+      }
+
+      .notfound-links a:hover {
+        color: var(--primary);
+      }
+
+      @media (max-width: 600px) {
+        .notfound-card {
+          padding: 40px 24px;
+          border-radius: 24px;
+        }
+        .notfound-actions .button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body class="notfound-page">
+    <div class="page-glow page-glow-left" aria-hidden="true"></div>
+    <div class="page-glow page-glow-right" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="navbar container">
+        <a class="brand" href="/" aria-label="Docuro AI home">
+          <span class="brand-mark">D</span>
+          <span class="brand-copy">
+            <strong>Docuro AI</strong>
+            <span>AI Accounting Automation</span>
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a href="/index.html#features">Features</a>
+          <a href="/index.html#how-it-works">How It Works</a>
+          <a href="/pricing/">Pricing</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+          <a href="/faq/">FAQ</a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="play-store-badge compact" href="/index.html#download" aria-label="Download on Google Play">
+            <span class="play-icon" aria-hidden="true">
+              <span class="play-triangle"></span>
+            </span>
+            <span class="play-text">
+              <small>Download on</small>
+              <strong>Google Play</strong>
+            </span>
+          </a>
+          <a class="button button-primary nav-cta" href="/index.html#final-cta">Start Free Trial</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="notfound-main">
+      <div class="notfound-card">
+        <div class="notfound-code">404</div>
+        <h1>This page could not be found</h1>
+        <p>
+          The page you are looking for might have been moved, renamed, or no longer exists. Let’s
+          get you back to something useful.
+        </p>
+        <div class="notfound-actions">
+          <a class="button button-primary" href="/">Back to Home</a>
+          <a class="button button-secondary" href="/contact/">Contact Support</a>
+        </div>
+        <div class="notfound-links">
+          <a href="/pricing/">Pricing</a>
+          <a href="/about/">About</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/privacy-policy/">Privacy</a>
+          <a href="/terms-and-conditions/">Terms</a>
+          <a href="/refund-policy/">Refund</a>
+          <a href="/cancellation-policy/">Cancellation</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand-col">
+            <a class="brand footer-brand" href="/">
+              <span class="brand-mark">D</span>
+              <span class="brand-copy">
+                <strong>Docuro AI</strong>
+                <span>AI Accounting Automation</span>
+              </span>
+            </a>
+            <p class="footer-description">
+              Docuro AI helps automate GST workflows, invoice processing, ledger management, and Tally exports using AI-powered accounting automation.
+            </p>
+            <a class="footer-instagram" href="https://www.instagram.com/docuro.in?igsh=MW5kYjFpMDVsOWxwZQ==" target="_blank" rel="noopener noreferrer" aria-label="Follow Docuro AI on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+              Follow on Instagram
+            </a>
+          </div>
+          <div>
+            <p class="footer-col-title">Product</p>
+            <nav class="footer-nav">
+              <a href="/index.html#features">Features</a>
+              <a href="/pricing/">Pricing</a>
+              <a href="/index.html#how-it-works">How It Works</a>
+              <a href="/index.html#features">AI Automation</a>
+              <a href="/index.html#showcase">GST Dashboard</a>
+              <a href="/index.html#showcase">Tally Integration</a>
+            </nav>
+          </div>
+          <div>
+            <p class="footer-col-title">Company</p>
+            <nav class="footer-nav">
+              <a href="/about/">About Us</a>
+              <a href="/contact/">Contact Us</a>
+              <a href="/faq/">FAQ</a>
+              <a href="/contact/">Support</a>
+            </nav>
+          </div>
+          <div>
+            <p class="footer-col-title">Legal</p>
+            <nav class="footer-nav">
+              <a href="/privacy-policy/">Privacy Policy</a>
+              <a href="/terms-and-conditions/">Terms &amp; Conditions</a>
+              <a href="/refund-policy/">Refund Policy</a>
+              <a href="/cancellation-policy/">Cancellation Policy</a>
+            </nav>
+          </div>
+          <div>
+            <p class="footer-col-title">Support</p>
+            <div class="footer-support-info">
+              <span class="footer-support-label">Docuro AI Support</span>
+              <span>Email: <a href="mailto:support@docuroai.in">support@docuroai.in</a></span>
+              <span>Phone: +91-7388913179</span>
+              <span>Mon–Sat, 10:00 AM – 7:00 PM IST</span>
+              <span>Location: India</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-copyright">&copy; 2026 Docuro AI. All rights reserved.</span>
+          <span class="footer-bottom-tagline">Built in India for modern accounting automation.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="860" rx="40" fill="url(#bg)"/>
+  <g opacity="0.45" filter="url(#blur)">
+    <circle cx="220" cy="180" r="180" fill="#2563EB"/>
+    <circle cx="1010" cy="670" r="190" fill="#4F46E5"/>
+    <circle cx="930" cy="140" r="120" fill="#14B8A6"/>
+  </g>
+  <rect x="76" y="76" width="1048" height="708" rx="34" fill="rgba(10,16,30,0.78)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="126" y="146" fill="white" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Privacy &amp; Security Controls</text>
+  <text x="126" y="186" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="20">Encryption, cloud security, AI processing protection, and secure accounting workflows.</text>
+
+  <rect x="126" y="238" width="286" height="182" rx="28" fill="#111C34"/>
+  <circle cx="188" cy="300" r="34" fill="url(#enc)"/>
+  <rect x="172" y="292" width="32" height="26" rx="8" fill="#0B1220"/>
+  <path d="M180 292V282C180 272 188 264 198 264C208 264 216 272 216 282V292" stroke="#DDE8FF" stroke-width="6" stroke-linecap="round"/>
+  <text x="238" y="296" fill="white" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Encryption</text>
+  <text x="238" y="330" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">TLS 1.3 in transit</text>
+  <text x="238" y="358" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">AES-256 at rest</text>
+
+  <rect x="458" y="238" width="286" height="182" rx="28" fill="#111C34"/>
+  <circle cx="520" cy="300" r="34" fill="url(#cloud)"/>
+  <path d="M500 314C490 314 482 306 482 296C482 288 488 280 496 278C500 264 512 254 526 254C542 254 556 266 556 284V286C566 286 574 294 574 304C574 314 566 322 556 322H502" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+  <text x="570" y="296" fill="white" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Cloud Security</text>
+  <text x="570" y="330" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">Isolated infrastructure</text>
+  <text x="570" y="358" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">Monitored availability</text>
+
+  <rect x="790" y="238" width="286" height="182" rx="28" fill="#111C34"/>
+  <circle cx="852" cy="300" r="34" fill="url(#ai)"/>
+  <path d="M840 284H864V316H840V284Z" stroke="#E2E8F0" stroke-width="6" stroke-linejoin="round"/>
+  <path d="M852 266V280M834 300H820M884 300H870M838 274L828 264M866 274L876 264M838 326L828 336M866 326L876 336M852 320V334" stroke="#E2E8F0" stroke-width="6" stroke-linecap="round"/>
+  <text x="902" y="296" fill="white" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">AI Protection</text>
+  <text x="902" y="330" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">Private processing paths</text>
+  <text x="902" y="358" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18">Confidence-based review</text>
+
+  <rect x="126" y="470" width="950" height="248" rx="30" fill="#111C34"/>
+  <text x="166" y="530" fill="white" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Secure Accounting Workflow</text>
+  <path d="M228 620H980" stroke="url(#path)" stroke-width="6" stroke-linecap="round" stroke-dasharray="16 18"/>
+
+  <g>
+    <circle cx="228" cy="620" r="46" fill="url(#step1)"/>
+    <text x="197" y="628" fill="white" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Upload</text>
+  </g>
+  <g>
+    <circle cx="478" cy="620" r="46" fill="url(#step2)"/>
+    <text x="455" y="628" fill="white" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Scan</text>
+  </g>
+  <g>
+    <circle cx="728" cy="620" r="46" fill="url(#step3)"/>
+    <text x="699" y="628" fill="white" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Review</text>
+  </g>
+  <g>
+    <circle cx="978" cy="620" r="46" fill="url(#step4)"/>
+    <text x="949" y="628" fill="white" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Export</text>
+  </g>
+
+  <rect x="176" y="672" width="124" height="18" rx="9" fill="#1D4ED8"/>
+  <rect x="426" y="672" width="124" height="18" rx="9" fill="#06B6D4"/>
+  <rect x="676" y="672" width="124" height="18" rx="9" fill="#22C55E"/>
+  <rect x="926" y="672" width="124" height="18" rx="9" fill="#7C3AED"/>
+
+  <defs>
+    <linearGradient id="bg" x1="80" y1="40" x2="1120" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#08111D"/>
+      <stop offset="1" stop-color="#111B34"/>
+    </linearGradient>
+    <linearGradient id="enc" x1="154" y1="266" x2="222" y2="334" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="cloud" x1="486" y1="266" x2="554" y2="334" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="ai" x1="818" y1="266" x2="886" y2="334" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="path" x1="228" y1="620" x2="980" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="step1" x1="182" y1="574" x2="274" y2="666" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="step2" x1="432" y1="574" x2="524" y2="666" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+    <linearGradient id="step3" x1="682" y1="574" x2="774" y2="666" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14B8A6"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="step4" x1="932" y1="574" x2="1024" y2="666" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#4F46E5"/>
+    </linearGradient>
+    <filter id="blur" x="-80" y="-120" width="1560" height="1220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="90"/>
+    </filter>
+  </defs>
+</svg>

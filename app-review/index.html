@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Review &amp; APK Download | Docuro AI</title>
+    <meta
+      name="description"
+      content="Official Docuro AI app review page for Razorpay evaluation, compliance verification, and APK download. Includes reviewer credentials, legal links, and business information."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Docuro AI App Review &amp; Download" />
+    <meta
+      property="og:description"
+      content="Standalone review page for Docuro AI — APK download, reviewer credentials, compliance, and business verification."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://docuro.ai/app-review/" />
+    <meta property="og:image" content="../assets/images/dashboard.png" />
+    <link rel="canonical" href="https://docuro.ai/app-review/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+      .review-page main { padding-top: 0; }
+
+      .review-hero { padding-top: 140px; }
+      .review-hero .hero-actions { flex-wrap: wrap; gap: 14px; }
+
+      .review-grid {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+      .review-card {
+        padding: 28px;
+        border-radius: 22px;
+      }
+      .review-card h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.15rem;
+        margin: 0 0 10px;
+        color: #0f1e3a;
+      }
+      .review-card p,
+      .review-card li {
+        color: #45557a;
+        line-height: 1.65;
+      }
+      .review-card ul {
+        margin: 0;
+        padding-left: 18px;
+      }
+      .review-card ul li + li { margin-top: 6px; }
+
+      .review-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+      .review-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(36, 99, 235, 0.08);
+        color: #1d4ed8;
+        font-weight: 600;
+        font-size: 0.82rem;
+        border: 1px solid rgba(36, 99, 235, 0.18);
+      }
+
+      .download-card {
+        padding: 36px;
+        text-align: center;
+        border-radius: 28px;
+        background: linear-gradient(135deg, rgba(36, 99, 235, 0.08), rgba(99, 179, 237, 0.05));
+      }
+      .download-card h2 {
+        font-family: 'Poppins', sans-serif;
+        margin: 12px 0;
+        font-size: 1.85rem;
+        color: #0f1e3a;
+      }
+      .download-meta {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin: 18px 0 24px;
+        color: #45557a;
+        font-size: 0.92rem;
+      }
+      .download-meta span strong { color: #0f1e3a; }
+      .download-actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+      .reviewer-notes {
+        margin-top: 28px;
+        padding: 20px;
+        text-align: left;
+        background: rgba(255,255,255,0.6);
+        border-radius: 18px;
+        border: 1px solid rgba(36, 99, 235, 0.12);
+        color: #45557a;
+        line-height: 1.65;
+      }
+
+      .credentials-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        margin-top: 14px;
+      }
+      .credentials-table th,
+      .credentials-table td {
+        text-align: left;
+        padding: 12px 14px;
+        font-size: 0.95rem;
+      }
+      .credentials-table th {
+        background: rgba(36, 99, 235, 0.08);
+        color: #0f1e3a;
+        font-weight: 600;
+      }
+      .credentials-table td {
+        border-bottom: 1px solid rgba(15, 30, 58, 0.06);
+        color: #45557a;
+      }
+      .credentials-table code {
+        background: rgba(15, 30, 58, 0.06);
+        padding: 3px 8px;
+        border-radius: 6px;
+        font-size: 0.88rem;
+        color: #0f1e3a;
+      }
+
+      .legal-grid {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+      .legal-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 18px 22px;
+        border-radius: 16px;
+        background: #fff;
+        border: 1px solid rgba(36, 99, 235, 0.14);
+        color: #0f1e3a;
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      }
+      .legal-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 36px -22px rgba(15, 30, 58, 0.35);
+        border-color: rgba(36, 99, 235, 0.4);
+      }
+      .legal-link::after {
+        content: "→";
+        color: #1d4ed8;
+        font-weight: 700;
+      }
+
+      .business-info {
+        display: grid;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        margin-top: 18px;
+      }
+      .business-info div {
+        padding: 18px;
+        border-radius: 14px;
+        background: rgba(36, 99, 235, 0.05);
+        color: #45557a;
+      }
+      .business-info strong { display: block; color: #0f1e3a; margin-bottom: 4px; }
+
+      .faq-list { display: grid; gap: 14px; margin-top: 18px; }
+      .faq-list details {
+        padding: 18px 22px;
+        border-radius: 16px;
+        background: #fff;
+        border: 1px solid rgba(36, 99, 235, 0.12);
+      }
+      .faq-list summary {
+        cursor: pointer;
+        font-weight: 600;
+        color: #0f1e3a;
+        list-style: none;
+      }
+      .faq-list summary::-webkit-details-marker { display: none; }
+      .faq-list details[open] summary { margin-bottom: 10px; }
+      .faq-list p { color: #45557a; margin: 0; line-height: 1.65; }
+
+      .workflow-steps {
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        margin-top: 22px;
+        counter-reset: stepcount;
+      }
+      .workflow-steps .review-card {
+        position: relative;
+        padding-top: 56px;
+      }
+      .workflow-steps .review-card::before {
+        counter-increment: stepcount;
+        content: counter(stepcount);
+        position: absolute;
+        top: 18px;
+        left: 22px;
+        width: 32px;
+        height: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: #2463eb;
+        color: #fff;
+        font-weight: 700;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      @media (max-width: 640px) {
+        .review-hero { padding-top: 110px; }
+        .download-card { padding: 26px 20px; }
+      }
+    </style>
+  </head>
+  <body class="review-page">
+    <div class="page-glow page-glow-left" aria-hidden="true"></div>
+    <div class="page-glow page-glow-right" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="navbar container">
+        <a class="brand" href="../index.html" aria-label="Docuro AI home">
+          <span class="brand-mark">D</span>
+          <span class="brand-copy">
+            <strong>Docuro AI</strong>
+            <span>AI Accounting Automation</span>
+          </span>
+        </a>
+
+        <div class="nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#features">Features</a>
+          <a href="../pricing/">Pricing</a>
+          <a href="../about/">About</a>
+          <a href="../contact/">Contact</a>
+          <a href="../faq/">FAQ</a>
+          <a href="./" aria-current="page">App Review</a>
+        </div>
+
+        <div class="nav-actions">
+          <a class="play-store-badge compact" href="#download" aria-label="Download APK">
+            <span class="play-icon" aria-hidden="true">
+              <span class="play-triangle"></span>
+            </span>
+            <span class="play-text">
+              <small>Download</small>
+              <strong>Android APK</strong>
+            </span>
+          </a>
+          <a class="button button-primary nav-cta" href="#download">Download App</a>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 1. Hero -->
+      <section class="hero section review-hero">
+        <div class="container">
+          <span class="eyebrow">For Razorpay Review &amp; Evaluation</span>
+          <h1>Docuro AI — Official App Review Page</h1>
+          <p class="hero-subtitle">
+            A dedicated, transparent overview of Docuro AI for Razorpay reviewers, compliance teams,
+            and evaluation partners. Download the latest APK, view test credentials, verify legal
+            documentation, and confirm business legitimacy — all in one place.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#download">Download APK</a>
+            <a class="button button-secondary" href="#credentials">Reviewer Credentials</a>
+            <a class="button button-secondary" href="#legal">Legal &amp; Compliance</a>
+          </div>
+          <div class="review-badges">
+            <span class="review-badge">Production Build</span>
+            <span class="review-badge">Razorpay Compliance Ready</span>
+            <span class="review-badge">Made in India</span>
+            <span class="review-badge">GST &amp; Tally Integrated</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. App Overview -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">App Overview</span>
+            <h2>What Docuro AI Does</h2>
+            <p>
+              Docuro AI is an AI-powered accounting automation platform built for Indian Chartered
+              Accountants, tax professionals, and SMBs. It converts invoices, bills, and receipts
+              into ledger-ready data, automates GST workflows, and exports directly to Tally.
+            </p>
+          </div>
+          <div class="review-grid">
+            <div class="glass-card review-card">
+              <h3>Category</h3>
+              <p>Business / Finance — Accounting Automation SaaS</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Platform</h3>
+              <p>Android (APK) &amp; Web. Cross-platform via Flutter.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Target Users</h3>
+              <p>Chartered Accountants, Tax Consultants, SMBs, and Finance teams across India.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Monetization</h3>
+              <p>Subscription plans billed via Razorpay (INR). Includes Starter, Pro, and Enterprise tiers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. AI Invoice Workflow -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">AI Invoice Workflow</span>
+            <h2>From Document Upload to Tally Export</h2>
+            <p>A complete, AI-assisted accounting cycle inside one app.</p>
+          </div>
+          <div class="workflow-steps">
+            <div class="glass-card review-card">
+              <h3>Capture</h3>
+              <p>Upload or scan invoices, bills, and receipts via camera or gallery.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>AI Extraction</h3>
+              <p>OCR + LLM extract vendor, GSTIN, line items, taxes, and totals automatically.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Ledger Mapping</h3>
+              <p>Smart suggestions map entries to the right ledgers and voucher types.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Tally Export</h3>
+              <p>One-click export to Tally Prime / ERP 9 with audit-grade accuracy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Feature Stack -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Feature Stack</span>
+            <h2>Everything Inside Docuro AI</h2>
+          </div>
+          <div class="review-grid">
+            <div class="glass-card review-card">
+              <h3>AI Invoice OCR</h3>
+              <p>High-accuracy extraction from photographed or scanned documents.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>GST Automation</h3>
+              <p>Auto-classifies GST rates, CGST/SGST/IGST, and reconciles records.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Voucher Generation</h3>
+              <p>Generate purchase, sales, and journal vouchers from extracted data.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Ledger Creation</h3>
+              <p>Auto-creates and maintains ledgers, party masters, and stock items.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Tally Integration</h3>
+              <p>Direct XML export compatible with Tally Prime &amp; ERP 9.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Razorpay Payments</h3>
+              <p>Secure subscription billing in INR via Razorpay's PCI-DSS infrastructure.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Download APK -->
+      <section class="section" id="download">
+        <div class="container">
+          <div class="glass-card download-card">
+            <span class="eyebrow">Download</span>
+            <h2>Get the Docuro AI APK</h2>
+            <p>For Razorpay Review &amp; Evaluation Only.</p>
+            <div class="download-meta">
+              <span><strong>Version:</strong> 1.0.0</span>
+              <span><strong>Size:</strong> ~38 MB</span>
+              <span><strong>Min Android:</strong> 7.0+</span>
+              <span><strong>Build:</strong> Release / Signed</span>
+            </div>
+            <div class="download-actions">
+              <a class="button button-primary" href="../assets/docuro-ai.apk" download>Download APK</a>
+              <a class="button button-secondary" href="mailto:support@docuroai.in?subject=Docuro%20AI%20APK%20Request">Request Latest Build via Email</a>
+            </div>
+            <div class="reviewer-notes">
+              <strong style="color:#0f1e3a;">Reviewer Notes</strong>
+              <p style="margin-top:8px;">
+                Please enable "Install from Unknown Sources" on your Android device to install the APK.
+                The build is signed and uploaded specifically for compliance review. For an updated
+                build or any review-related artifact, email
+                <a href="mailto:support@docuroai.in">support@docuroai.in</a> — we respond within 24 hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Reviewer / Test Credentials -->
+      <section class="section" id="credentials">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Reviewer Access</span>
+            <h2>Test Login Credentials</h2>
+            <p>Use the following demo account to evaluate the full app and Razorpay payment flow in test mode.</p>
+          </div>
+          <div class="glass-card review-card">
+            <table class="credentials-table" aria-label="Test credentials">
+              <thead>
+                <tr><th>Field</th><th>Value</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Login Method</td><td>Mobile OTP (Indian numbers)</td></tr>
+                <tr><td>Reviewer Phone</td><td><code>+91-9999999999</code></td></tr>
+                <tr><td>OTP (Test Mode)</td><td><code>123456</code></td></tr>
+                <tr><td>Demo Email</td><td><code>reviewer@docuroai.in</code></td></tr>
+                <tr><td>Demo Password</td><td><code>Reviewer@2026</code></td></tr>
+                <tr><td>Razorpay Test Card</td><td><code>4111 1111 1111 1111</code> · Any future expiry · CVV <code>123</code></td></tr>
+                <tr><td>Razorpay Test UPI</td><td><code>success@razorpay</code></td></tr>
+              </tbody>
+            </table>
+            <p style="margin-top:14px;color:#45557a;">
+              If any test credential fails or needs rotation, please email
+              <a href="mailto:support@docuroai.in">support@docuroai.in</a> and we will provision fresh
+              access immediately.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Legal & Compliance -->
+      <section class="section" id="legal">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Legal &amp; Compliance</span>
+            <h2>Policies &amp; Documentation</h2>
+            <p>Official, publicly accessible legal pages required for Razorpay onboarding and compliance review.</p>
+          </div>
+          <div class="legal-grid">
+            <a class="legal-link" href="../terms-and-conditions/">Terms &amp; Conditions</a>
+            <a class="legal-link" href="../privacy-policy/">Privacy Policy</a>
+            <a class="legal-link" href="../refund-policy/">Refund Policy</a>
+            <a class="legal-link" href="../cancellation-policy/">Cancellation Policy</a>
+            <a class="legal-link" href="../about/">About Us</a>
+            <a class="legal-link" href="../faq/">FAQ</a>
+            <a class="legal-link" href="../contact/">Contact Us</a>
+            <a class="legal-link" href="../pricing/">Pricing</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8. Business Information -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Business Information</span>
+            <h2>Registered Entity Details</h2>
+          </div>
+          <div class="glass-card review-card">
+            <div class="business-info">
+              <div>
+                <strong>Business Name</strong>
+                Docuro AI
+              </div>
+              <div>
+                <strong>Registered Address</strong>
+                Prayagraj, Uttar Pradesh, India
+              </div>
+              <div>
+                <strong>Support Email</strong>
+                <a href="mailto:support@docuroai.in">support@docuroai.in</a>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                +91-7388913179
+              </div>
+              <div>
+                <strong>Website</strong>
+                <a href="https://docuro.ai/">https://docuro.ai/</a>
+              </div>
+              <div>
+                <strong>Working Hours</strong>
+                Mon – Sat · 10:00 AM – 7:00 PM IST
+              </div>
+              <div>
+                <strong>Business Category</strong>
+                SaaS — Accounting Automation
+              </div>
+              <div>
+                <strong>Payment Partner</strong>
+                Razorpay (INR Subscriptions)
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. Security & Trust -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Security &amp; Trust</span>
+            <h2>How We Protect Customer Data</h2>
+          </div>
+          <div class="review-grid">
+            <div class="glass-card review-card">
+              <h3>Encrypted Transport</h3>
+              <p>All API traffic is served over HTTPS / TLS 1.2+ with HSTS enabled.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Data Isolation</h3>
+              <p>Per-tenant isolation in Supabase with Row Level Security on every table.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>PCI-DSS Payments</h3>
+              <p>Card &amp; UPI data is handled entirely by Razorpay — never stored on our servers.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Auth &amp; Sessions</h3>
+              <p>Mobile OTP &amp; JWT-based sessions with short token lifetimes and refresh rotation.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Backups</h3>
+              <p>Automated daily backups with point-in-time recovery on the primary database.</p>
+            </div>
+            <div class="glass-card review-card">
+              <h3>Audit Logs</h3>
+              <p>Sensitive financial actions are logged for traceability and compliance.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. FAQ -->
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">FAQ</span>
+            <h2>Review-Related Questions</h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>Is this APK the same as the production build?</summary>
+              <p>Yes. The APK linked above is the same signed release build distributed to end users, provided here for review convenience.</p>
+            </details>
+            <details>
+              <summary>Which payment gateway does Docuro AI use?</summary>
+              <p>Docuro AI uses Razorpay for all INR subscription billing. No card or UPI data ever touches our servers.</p>
+            </details>
+            <details>
+              <summary>How do I test a paid subscription?</summary>
+              <p>Use the Razorpay test card or UPI listed in the Reviewer Credentials section. Charges in test mode are not real.</p>
+            </details>
+            <details>
+              <summary>How can a customer request a refund?</summary>
+              <p>Refunds follow the published <a href="../refund-policy/">Refund Policy</a>. Customers email support@docuroai.in and refunds are processed via Razorpay within 5–7 business days.</p>
+            </details>
+            <details>
+              <summary>How is customer data protected?</summary>
+              <p>Data is encrypted in transit, isolated per tenant via RLS, backed up daily, and accessed only by authorized roles.</p>
+            </details>
+            <details>
+              <summary>How do I contact the Docuro AI team during review?</summary>
+              <p>Email <a href="mailto:support@docuroai.in">support@docuroai.in</a> or call +91-7388913179 between 10 AM – 7 PM IST, Monday to Saturday.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand-col">
+            <a class="brand footer-brand" href="../index.html">
+              <span class="brand-mark">D</span>
+              <span class="brand-copy">
+                <strong>Docuro AI</strong>
+                <span>AI Accounting Automation</span>
+              </span>
+            </a>
+            <p class="footer-description">
+              Docuro AI helps automate GST workflows, invoice processing, ledger management, and Tally exports using AI-powered accounting automation.
+            </p>
+          </div>
+
+          <div>
+            <p class="footer-col-title">Product</p>
+            <nav class="footer-nav">
+              <a href="../index.html#features">Features</a>
+              <a href="../pricing/">Pricing</a>
+              <a href="../index.html#how-it-works">How It Works</a>
+              <a href="./">App Review</a>
+            </nav>
+          </div>
+
+          <div>
+            <p class="footer-col-title">Company</p>
+            <nav class="footer-nav">
+              <a href="../about/">About Us</a>
+              <a href="../contact/">Contact Us</a>
+              <a href="../faq/">FAQ</a>
+            </nav>
+          </div>
+
+          <div>
+            <p class="footer-col-title">Legal</p>
+            <nav class="footer-nav">
+              <a href="../privacy-policy/">Privacy Policy</a>
+              <a href="../terms-and-conditions/">Terms &amp; Conditions</a>
+              <a href="../refund-policy/">Refund Policy</a>
+              <a href="../cancellation-policy/">Cancellation Policy</a>
+            </nav>
+          </div>
+
+          <div>
+            <p class="footer-col-title">Support</p>
+            <div class="footer-support-info">
+              <span class="footer-support-label">Docuro AI Support</span>
+              <span>Email: <a href="mailto:support@docuroai.in">support@docuroai.in</a></span>
+              <span>Phone: +91-7388913179</span>
+              <span>Mon–Sat, 10:00 AM – 7:00 PM IST</span>
+              <span>Location: Prayagraj, Uttar Pradesh, India</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span class="footer-copyright">&copy; 2026 Docuro AI. All rights reserved.</span>
+          <span class="footer-bottom-tagline">Built in India for modern accounting automation.</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
